@@ -1,0 +1,30 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PantherGuard IPC Message",
+  "description": "Standard message format for process security information.",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "process_name": {
+      "type": "string"
+    },
+    "threat_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "status",
+    "process_name",
+    "threat_level",
+    "timestamp"
+  ],
+  "additionalProperties": false
+}
