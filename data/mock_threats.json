@@ -1,0 +1,21 @@
+
+[
+  {
+    "status": "running",
+    "process_name": "chrome.exe",
+    "threat_level": "low",
+    "timestamp": "2026-10-25T15:00:00-04:00"
+  },
+  {
+    "status": "running",
+    "process_name": "unknown_process.exe",
+    "threat_level": "high",
+    "timestamp": "2026-10-25T15:01:00-04:00"
+  },
+  {
+    "status": "stopped",
+    "process_name": "test_program.exe",
+    "threat_level": "medium",
+    "timestamp": "2026-10-25T15:02:00-04:00"
+  }
+]
