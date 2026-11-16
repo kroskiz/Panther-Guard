@@ -1,0 +1,627 @@
+[
+{"status": "running", "process_name": "System Idle Process", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "System", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Registry", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "smss.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "csrss.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "wininit.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "csrss.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "winlogon.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "services.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "lsass.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "fontdrvhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "fontdrvhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WUDFHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "dwm.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OffloadItemService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WUDFHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SynTPEnhService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Memory Compression", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "AppHelperCap.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "NetworkCap.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WUDFHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "TouchpointAnalyticsClientService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WUDFHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "audiodg.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "spoolsv.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "DtsApo4Service.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "GameInputRedistService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ipfsvc.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HPCommRecovery.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OfficeClickToRun.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HPPrintScanDoctorService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OneApp.IGCC.WinService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "IntelAudioService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ipf_uf.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RtkAudUService64.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ProtonVPNService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "pg_ctl.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "MpDefenderCoreService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "vmware-authd.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SpOrientationService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "vmnetdhcp.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "GameInputRedistService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "vmnat.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "vmware-usbarbitrator64.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "MsMpEng.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WMIRegistrationService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "XboxService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "wslservice.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WUDFHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "XboxService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "AggregatorHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "GameInputRawInputProxy.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "postgres.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ipf_helper.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "gamingservices.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "gamingservicesnet.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "sihost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "wlanext.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "taskhostw.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OverlayHelper.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OmenInstallMonitor.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WmiPrvSE.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "explorer.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "CrossDeviceResume.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RtkAudUService64.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SynTPEnh.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "DiagsCap.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SearchIndexer.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "CrossDeviceService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ProtonVPN.NrptWatchdog.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SearchHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "StartMenuExperienceHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WidgetBoard.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WidgetService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ctfmon.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "TabTip.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "MicrosoftStartFeedProvider.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SysInfoCap.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "unsecapp.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "DefenderAiPlatformHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SpotifyLauncher.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "crashpad_handler.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "TextInputHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HP.SystemControl.Background.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SecurityHealthSystray.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SecurityHealthService.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RtkAudUService64.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ReconsentNotification.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "DefenderSessionHelper.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "NisSrv.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HP.ContextAware.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "dasHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ProtonVPN.Client.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "dasHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "FxSound.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HPSystemEventUtilityBackground.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "unsecapp.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HPMediaNetwork.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ShellExperienceHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OmenCommandCenterBackground.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SystemOptimizer.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ApplicationFrameHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "csc_iseagent.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "csc_iseposture.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "SystemSettings.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "UserOOBEBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "AppActions.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "MoNotificationUx.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WhatsApp.Root.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedgewebview2.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "dllhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "LockApp.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "taskhostw.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "copilot-runtime.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "HPSystemEventUtilityHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "backgroundTaskHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "ShellHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "PhoneExperienceHost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "pet.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OpenConsole.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "pwsh.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "codex.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "java.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "OpenConsole.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "bash.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "bash.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "msedge.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Notepad.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "Code.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "svchost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "RuntimeBroker.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "WmiPrvSE.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "bash.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "java.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "tasklist.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+,
+{"status": "running", "process_name": "conhost.exe", "threat_level": "low", "timestamp": "2026-11-15T18:37:11.400730-05:00"}
+]
