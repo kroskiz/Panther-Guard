@@ -1,0 +1,33 @@
+
+[
+  {
+    "status": "running",
+    "process_name": "chrome.exe",
+    "threat_level": "low",
+    "timestamp": "2026-11-05T13:00:00Z"
+  },
+  {
+    "status": "running",
+    "process_name": "unknown_process.exe",
+    "threat_level": "medium",
+    "timestamp": "2026-11-05T13:01:00Z"
+  },
+  {
+    "status": "running",
+    "process_name": "suspicious_script.exe",
+    "threat_level": "medium",
+    "timestamp": "2026-11-05T13:02:00Z"
+  },
+  {
+    "status": "running",
+    "process_name": "malware.exe",
+    "threat_level": "high",
+    "timestamp": "2026-11-05T13:03:00Z"
+  },
+  {
+    "status": "running",
+    "process_name": "ransomware.exe",
+    "threat_level": "high",
+    "timestamp": "2026-11-05T13:04:00Z"
+  }
+]
