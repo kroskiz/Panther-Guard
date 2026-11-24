@@ -49,9 +49,12 @@ def current_threat_level(events: list[dict]) -> str:
 
 
 def get_roary_reply(question: str, events: list[dict]) -> str:
-    """Placeholder for the AI call. Replace with a real model request later."""
-    return "AI responses are not connected yet. Roary will explain your security events here soon."
-
+    try:
+        #call Gemini here
+        return f"You asked: {question}"
+    except Exception as e:
+        print(e)
+        return "Roary is unavailable right now. Please try again shortly"
 
 def render_roary_helper() -> None:
     st.markdown(
