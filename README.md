@@ -88,6 +88,33 @@ streamlit run app.py
 4. Open a Pull Request on GitHub and ask a teammate to review.
 5. Update your card on the Trello **Weekly Tasks** board.
 
+6. ## Setup
+ Steps:
+1. Install Python 3.9+ and Java (JDK).
+2. Install dependencies:
+   pip install streamlit google-genai jsonschema
+3. Get a free Gemini API key from Google AI Studio.
+4. Set the key in your terminal (do NOT commit it):
+   - PowerShell: $env:GEMINI_API_KEY = "your-key"
+   - cmd: set GEMINI_API_KEY=your-key
+   Set it in the same terminal you run the app from.
+5. Run the dashboard:
+   python -m streamlit run app.py
+
+## Roary AI Helper
+Roary answers security questions using the events in data/security_logs.json.
+The model name is the GEMINI_MODEL constant in roary_helper.py. If you see a
+404 "model not found" error, update it to a currently available model.
+A 503 error means Google is busy; Roary shows a fallback message and you can retry.
+
+## Java scanner
+Compile ProcessScanner.java, then run:
+   java -cp bin ProcessScanner path/to/output.json
+On failure or timeout it writes mock data and prints the reason to stderr.
+
+## Validate output
+   python validate_ipc.py path/to/output.json
+
 ## Troubleshooting
 
 - **`javac` not recognized:** reinstall the JDK or add its `bin` folder to PATH, then open a new terminal.
