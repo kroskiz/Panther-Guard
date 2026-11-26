@@ -99,7 +99,7 @@ streamlit run app.py
    - cmd: set GEMINI_API_KEY=your-key
    Set it in the same terminal you run the app from.
 5. Run the dashboard:
-   python -m streamlit run app.py
+   python -m streamlit run roary_helper.py
 
 ## Roary AI Helper
 Roary answers security questions using the events in data/security_logs.json.
