@@ -13,11 +13,13 @@ Expects the log format defined in data/ipc_spec.json:
 
 import json
 from pathlib import Path
+from google import genai
 
 import streamlit as st
 
 FIU_BLUE = "#001538"
 FIU_GOLD = "#C5960C"
+GEMINI_MODEL = "gemini-3.8-flash"
 
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
@@ -48,14 +50,26 @@ def current_threat_level(events: list[dict]) -> str:
     return max(known, key=order.index) if known else "low"
 
 
+
 def get_roary_reply(question: str, events: list[dict]) -> str:
     try:
-        #call Gemini here
-        return f"You asked: {question}"
+        client = genai.Client()
+        prompt = (
+            "You are Roary, a friendly security assistant for a student dashboard. "
+            "Answer using only the events below. If there are no events, say so.\n\n"
+            f"Events: {json.dumps(events[-20:])}\n\n"
+            f"Question: {question}"
+        )
+        response = client.models.generate_content(
+            model=GEMINI_MODEL,
+            contents=prompt,
+        )
+        return response.text
     except Exception as e:
-        print(e)
-        return "Roary is unavailable right now. Please try again shortly"
+        print("ROARY ERROR:", e)
+        return "Roary is unavailable right now. Please try again shortly." 
 
+    
 def render_roary_helper() -> None:
     st.markdown(
         f"""
@@ -105,4 +119,4 @@ def render_roary_helper() -> None:
 
 if __name__ == "__main__":
     st.set_page_config(page_title="Roary Helper", layout="wide")
-    render_roary_helper()
+    render_roary_helper()render_roary_helper()
