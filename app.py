@@ -3,6 +3,8 @@ from pathlib import Path
 
 import pandas as pd
 import json
+import subprocess
+from datetime import datetime
 
 # ---------------------------------------------------------
 # Page Configuration & FIU Custom Styling
@@ -13,31 +15,69 @@ st.set_page_config(
     layout="wide"
 )
 
-LOG_FILE =Path(__file__).parent / "data" / "security_logs.json"
-
+PROJECT_DIR = Path(__file__).parent
+SCANNER_SOURCE = PROJECT_DIR / "src" / "ProcessScanner.java"
+SCANNER_CLASSES = PROJECT_DIR / "bin"
 THREAT_LABELS = {"low": "Safe", "medium": "Warning", "high": "Critical"}
 
-SAMPLE_LOGS = [
-    {"status": "running", "process_name": "chrome.exe", "threat_level": "low", "timestamp": "2026-11-01T10:15:00"},
-    {"status": "running", "process_name": "explorer.exe", "threat_level": "low", "timestamp": "2026-11-01T10:15:05"},
-    {"status": "running", "process_name": "updater.exe", "threat_level": "medium", "timestamp": "2026-11-01T10:16:10"},
-    {"status": "running", "process_name": "unknown_tool.exe", "threat_level": "high", "timestamp": "2026-11-01T10:16:30"},
-    {"status": "stopped", "process_name": "setup_helper.exe", "threat_level": "medium", "timestamp": "2026-11-01T10:17:45"},
-]
 
-def load_logs():
-    """Read the log file. If it's missing or unusable, return sample data."""
+@st.cache_resource(show_spinner=False)
+def compile_process_scanner(source_path, classes_path, source_mtime_ns):
+    source = Path(source_path)
+    classes = Path(classes_path)
+    classes.mkdir(parents=True, exist_ok=True)
+    if source.stat().st_mtime_ns != source_mtime_ns:
+        raise RuntimeError("The process scanner source changed during compilation.")
+    subprocess.run(
+        ["javac", "-d", str(classes), str(source)],
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+
+
+def run_process_scan():
+    """Compile the Java scanner when needed and return its process records."""
+    if not SCANNER_SOURCE.is_file():
+        raise RuntimeError(f"Process scanner source was not found: {SCANNER_SOURCE}")
+
     try:
-        with open(LOG_FILE, "r") as f:
-            data = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return SAMPLE_LOGS
+        compile_process_scanner(
+            str(SCANNER_SOURCE),
+            str(SCANNER_CLASSES),
+            SCANNER_SOURCE.stat().st_mtime_ns,
+        )
+        result = subprocess.run(
+            ["java", "-cp", str(SCANNER_CLASSES), "ProcessScanner"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=20,
+        )
+    except FileNotFoundError as error:
+        raise RuntimeError(f"Required scanner command was not found: {error.filename}") from error
+    except subprocess.TimeoutExpired as error:
+        raise RuntimeError("The process scanner timed out.") from error
+    except subprocess.CalledProcessError as error:
+        details = (error.stderr or error.stdout or "").strip()
+        message = f"Process scanner failed with exit code {error.returncode}."
+        if details:
+            message = f"{message} {details}"
+        raise RuntimeError(message) from error
 
-    if isinstance(data, dict):
-        data = [data]
-    if isinstance(data, list) and len(data) > 0:
-        return data
-    return SAMPLE_LOGS
+    try:
+        records = json.loads(result.stdout) # Reads backend output straight from stdout, not from a file (verify if fine)
+    except json.JSONDecodeError as error:
+        raise RuntimeError("The process scanner returned invalid JSON.") from error
+
+    if not isinstance(records, list) or any(not isinstance(record, dict) for record in records):
+        raise RuntimeError("The process scanner returned an unexpected data format.")
+    required_fields = {"status", "process_name", "threat_level", "timestamp"}
+    if any(not required_fields.issubset(record) for record in records):
+        raise RuntimeError("The process scanner returned records with missing fields.")
+
+    return records
 
 def color_threat(value):
   if value == "Critical":
@@ -73,6 +113,28 @@ st.markdown(
     }
     [data-testid="stSidebar"] {
         background-color: #000F29;
+    }
+    [data-testid="stSidebar"] [data-testid="stBaseButton-primary"] {
+        background-color: #C5960C;
+        border: 1px solid #C5960C;
+        border-radius: 8px;
+        color: #001538;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] [data-testid="stBaseButton-secondary"] {
+        background-color: #002255;
+        border: 1px solid #002255;
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-weight: 600;
+        text-align: left;
+        transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+    }
+    [data-testid="stSidebar"] [data-testid="stBaseButton-secondary"]:hover {
+        background-color: #0A2250;
+        border-color: #C5960C;
+        color: #FFFFFF;
+        box-shadow: 0 0 0 1px rgba(197, 150, 12, 0.25);
     }
 
     /* --- Kimarni's Refined Metrics & Responsive Containers --- */
@@ -114,15 +176,32 @@ st.markdown(
 # ---------------------------------------------------------
 st.sidebar.title("🐆 Panther Guard")
 st.sidebar.markdown("---")
+st.sidebar.markdown("#### Navigation")
 
-navigation_choice = st.sidebar.radio(
-    "Navigation Menu",
-    [
-        "🛡️ Security Monitor",
-        "🤖 Roary AI Assistant",
-        "❓ Help & Support"
-    ]
-)
+navigation_options = [
+    "🛡️ Security Monitor",
+    "🤖 Roary AI Assistant",
+    "❓ Help & Support",
+]
+if "navigation_choice" not in st.session_state:
+    st.session_state.navigation_choice = navigation_options[0]
+
+
+def select_navigation(option):
+    st.session_state.navigation_choice = option
+
+
+for index, option in enumerate(navigation_options):
+    st.sidebar.button(
+        option,
+        key=f"navigation_{index}",
+        type="primary" if st.session_state.navigation_choice == option else "secondary",
+        use_container_width=True,
+        on_click=select_navigation,
+        args=(option,),
+    )
+
+navigation_choice = st.session_state.navigation_choice
 
 st.sidebar.markdown("---")
 st.sidebar.info("System Status: **Active Monitoring**")
@@ -131,11 +210,6 @@ st.sidebar.info("System Status: **Active Monitoring**")
 # Page 1: Security Monitor (Scanner, Alerts & Quarantine)
 # ---------------------------------------------------------
 if navigation_choice == "🛡️ Security Monitor":
-    df = pd.DataFrame(load_logs())
-    df["Threat"] = df["threat_level"].map(THREAT_LABELS).fillna("Unknown")
-    df = df.rename(columns={"timestamp": "Time", "process_name": "Process", "status": "Status"})
-    use_container_width=True
-
     st.markdown("<h1 style='color: #C5960C;'>🐆 Panther Guard Security Dashboard</h1>", unsafe_allow_html=True)
     st.write("Real-time system process scanning, telemetry analysis, and threat management.")
     
@@ -145,19 +219,75 @@ if navigation_choice == "🛡️ Security Monitor":
 
     with col1:
         st.subheader("System Process Scanner")
-        
-        if st.button("Run System Scan", use_container_width=False):
-            st.code(
-                "[INFO] Initializing Panther Guard Process Scanner...\n"
-                "[SCAN] Checked active Windows background processes & IPC channels.\n"
-                "[ANOMALY] 1 suspicious background hook flagged for review.\n"
-                "[STATUS] Monitoring active threats...",
-                language="bash"
+        auto_scan = st.toggle("Auto-scan every 30 seconds", key="auto_scan_enabled")
+
+        @st.fragment(run_every="30s" if auto_scan else None)
+        def render_process_scan():
+            manual_scan = st.button("Run System Scan", use_container_width=False)
+
+            if auto_scan or manual_scan:
+                try:
+                    with st.spinner("Scanning running processes..."):
+                        records = run_process_scan()
+                except RuntimeError as error:
+                    st.session_state.process_scan_error = str(error)
+                else:
+                    st.session_state.process_scan_records = records
+                    st.session_state.process_scan_time = datetime.now().astimezone()
+                    st.session_state.process_scan_ran = True
+                    st.session_state.process_scan_error = None
+
+            scan_error = st.session_state.get("process_scan_error")
+            if scan_error:
+                st.error(f"Process scan failed: {scan_error}")
+                if st.session_state.get("process_scan_ran", False):
+                    st.caption("Showing results from the last successful scan.")
+
+            if not st.session_state.get("process_scan_ran", False):
+                if not scan_error:
+                    st.info("No scan run yet. Select Run System Scan to view process results.")
+                return
+
+            last_scan = st.session_state.process_scan_time.strftime("%Y-%m-%d %H:%M:%S %Z")
+            st.caption(f"Processes found during the latest scan · {last_scan}")
+
+            df = pd.DataFrame(st.session_state.process_scan_records)
+            if df.empty:
+                st.info("No running processes were found.")
+                return
+
+            df["Threat"] = df["threat_level"].map(THREAT_LABELS).fillna("Unknown")
+            df = df.rename(
+                columns={"timestamp": "Time", "process_name": "Process", "status": "Status"}
             )
-            st.success("Scan completed successfully!")
-            
+
+            f1, f2 = st.columns([1, 2], gap="medium")
+            search = f1.text_input("Search processes", placeholder="e.g. chrome")
+            levels = f2.multiselect(
+                "Threat level",
+                ["Safe", "Warning", "Critical"],
+                default=["Safe", "Warning", "Critical"],
+            )
+
+            scan_results = df[df["Status"].astype(str).str.lower().eq("running")]
+            filtered = scan_results[scan_results["Threat"].isin(levels)]
+            if search:
+                filtered = filtered[
+                    filtered["Process"].str.contains(search, case=False, regex=False, na=False)
+                ]
+
+            if filtered.empty:
+                st.info("No processes match your search and filters.")
+            else:
+                table = filtered[["Time", "Process", "Threat", "Status"]]
+                st.dataframe(table.style.map(color_threat, subset=["Threat"]), hide_index=True)
+
+        render_process_scan()
+
     with col2:
         st.subheader("Quick Health Overview")
+        # TODO: Ask team lead what this section should report and how to collect its data.
+        # Threat Level can be derived from average threat level of running processes, unsure about rest
         st.markdown(
             """
             <div class="fiu-card">
@@ -191,30 +321,6 @@ if navigation_choice == "🛡️ Security Monitor":
     with col_alert2:
         if st.button("🚨 Quarantine Process", use_container_width=True):
             st.success(f"Successfully isolated and terminated {simulated_threat}!")
-
-    st.subheader("Security Logs")
-    
-    f1, f2 = st.columns([1, 2], gap="medium")
-    search = f1.text_input("Search processes", placeholder="e.g. chrome")
-    levels = f2.multiselect(
-        "Threat level",
-        ["Safe", "Warning", "Critical"],
-        default=["Safe", "Warning", "Critical"],
-    )
-
-
-
-    filtered = df[df["Threat"].isin(levels)]
-    if search:
-        filtered = filtered[
-            filtered["Process"].str.contains(search, case=False, regex=False, na=False)
-        ]
-
-    if filtered.empty:
-        st.info("No entries match your search and filters.")
-    else:
-        table = filtered[["Time", "Process", "Threat", "Status"]]
-        st.dataframe(table.style.map(color_threat, subset=["Threat"]), hide_index=True)
 
 # ---------------------------------------------------------
 # Page 2: Roary AI Assistant

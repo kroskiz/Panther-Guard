@@ -73,10 +73,8 @@
 			failed = true;;
 		}
 		if (failed) {
-			lines.clear();
-			lines.add("\"chrome.exe\",\"1\",\"Console\",\"1\",\"5 K\"");
-			lines.add("\"unknown_process.exe\",\"2\",\"Console\",\"1\",\"5 K\"");
-			lines.add("\"test_program.exe\",\"3\",\"Console\",\"1\",\"5 K\"");
+			System.err.println("Process scan failed; no process records were generated.");
+			System.exit(1);
 		}
 		// Get Java Time - Stamp:
 		String timeStamp = OffsetDateTime.now().toString(); // gives the current time and date.
