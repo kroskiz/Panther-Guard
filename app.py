@@ -43,6 +43,21 @@ def color_threat(value):
         return "background-color: #C5960C; color: #001538; font-weight: bold"
   return ""
 
+@st.dialog("⚠️ Active Threat Detected")
+def threat_popup(threats, key):
+    st.markdown(f"**{len(threats)} critical process(es) need your attention:**")
+    for _, row in threats.iterrows():
+        st.error(f"**{row['Process']}** · {row['Status']} · {row['Time']}")
+
+    c1, c2 = st.columns(2)
+    if c1.button("Quarantine", use_container_width=True):
+        st.toast("Quarantine: coming soon")  # Member 5 can wire the real action here
+        st.session_state.dismissed_threats = key
+        st.rerun()
+    if c2.button("Dismiss", use_container_width=True):
+        st.session_state.dismissed_threats = key
+        st.rerun()
+
 
 
 
@@ -114,6 +129,15 @@ color: #C5960C !important;}
     [data-testid="stMetricValue"] { font-size: 1.5rem; }
 }
 
+div[role="dialog"] {
+    background-color: #001538;
+    border: 2px solid #C5960C;
+}
+div[role="dialog"] h2,
+div[role="dialog"] p {
+    color: white;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -141,39 +165,40 @@ m1.metric("Total Processes", len(df))
 m2.metric("Warnings", int((df["Threat"] == "Warning").sum()))
 m3.metric("Critical", int((df["Threat"] == "Critical").sum()))
 
-logs_col, mascot_col = st.columns([3, 1])
+critical = df[df["Threat"] == "Critical"]
+critical_key = tuple(sorted(critical["Process"]))
 
-with logs_col:
-    with st.container(border=True, height=520):
-        st.subheader("Security Logs")
+if not critical.empty and st.session_state.get("dismissed_threats") != critical_key:
+    threat_popup(critical, critical_key)
 
-        f1, f2 = st.columns([1, 2], gap="medium")
-        search = f1.text_input("Search processes", placeholder="e.g. chrome")
-        levels = f2.multiselect(
-            "Threat level",
-            ["Safe", "Warning", "Critical"],
-            default=["Safe", "Warning", "Critical"],
+
+with st.container(border=True, height=520):
+    st.subheader("Security Logs")
+
+    f1, f2 = st.columns([1, 2], gap="medium")
+    search = f1.text_input("Search processes", placeholder="e.g. chrome")
+    levels = f2.multiselect(
+        "Threat level",
+        ["Safe", "Warning", "Critical"],
+        default=["Safe", "Warning", "Critical"],
+    )
+
+    filtered = df[df["Threat"].isin(levels)]
+    if search:
+        filtered = filtered[
+            filtered["Process"].str.contains(search, case=False, regex=False, na=False)
+        ]
+
+    if filtered.empty:
+        st.info("No entries match your search and filters.")
+    else:
+        table = filtered[["Time", "Process", "Threat", "Status"]]
+        st.dataframe(
+            table.style.map(color_threat, subset=["Threat"]),
+            hide_index=True,
+            use_container_width=True,
         )
 
-    
-
-        filtered = df[df["Threat"].isin(levels)]
-        if search:
-            filtered = filtered[
-                filtered["Process"].str.contains(search, case=False, regex=False, na=False)
-            ]
-
-        if filtered.empty:
-            st.info("No entries match your search and filters.")
-        else:
-            table = filtered[["Time", "Process", "Threat", "Status"]]
-            st.dataframe(table.style.map(color_threat, subset=["Threat"]), hide_index=True)
-
-with mascot_col:
-    with st.container(border=True, height=520):
-        st.subheader("Roary")
-        st.caption("Mascot and status image will appear here.")
-        
 
 
 
