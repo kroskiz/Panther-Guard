@@ -1,33 +1,97 @@
-
 [
   {
-    "status": "running",
+    "pid": 10001,
+    "status": "New",
     "process_name": "chrome.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "low",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-05T13:00:00Z"
   },
   {
-    "status": "running",
+    "pid": 10002,
+    "status": "New",
     "process_name": "unknown_process.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "medium",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-05T13:01:00Z"
   },
   {
-    "status": "running",
+    "pid": 10003,
+    "status": "New",
     "process_name": "suspicious_script.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "medium",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-05T13:02:00Z"
   },
   {
-    "status": "running",
+    "pid": 10004,
+    "status": "New",
     "process_name": "malware.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "high",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-05T13:03:00Z"
   },
   {
-    "status": "running",
+    "pid": 10005,
+    "status": "New",
     "process_name": "ransomware.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "high",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-05T13:04:00Z"
   }
 ]

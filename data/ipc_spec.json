@@ -2,18 +2,79 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "PantherGuard IPC Message",
-  "description": "Standard message format for process security information.",
+  "description": "Process snapshot metadata, observation history, and heuristic assessment evidence.",
   "type": "object",
   "properties": {
+    "pid": {
+      "type": "integer",
+      "minimum": 0
+    },
     "status": {
-      "type": "string"
+      "type": "string",
+      "enum": ["New", "Previously Seen"],
+      "description": "Whether this PID and start time were present in the last successful snapshot. All processes are New on the first snapshot."
     },
     "process_name": {
       "type": "string"
     },
+    "executable_path": {
+      "type": ["string", "null"],
+      "description": "Executable image path when the operating system exposes it."
+    },
+    "parent_pid": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    },
+    "parent_process_name": {
+      "type": ["string", "null"]
+    },
+    "started_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "command_line_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "encoded_powershell_command",
+          "hidden_powershell_window",
+          "powershell_execution_policy_bypass"
+        ]
+      }
+    },
+    "file_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Locally computed SHA-256 for a process already flagged by another heuristic. No reputation lookup is performed."
+    },
+    "file_hash_status": {
+      "type": "string",
+      "enum": ["available", "unavailable", "too_large", "not_checked"]
+    },
+    "signature_status": {
+      "type": "string",
+      "enum": [
+        "Valid",
+        "NotSigned",
+        "HashMismatch",
+        "NotTrusted",
+        "Unavailable",
+        "not_checked"
+      ]
+    },
+    "signer": {
+      "type": ["string", "null"]
+    },
     "threat_level": {
       "type": "string",
       "enum": ["low", "medium", "high"]
+    },
+    "threat_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "timestamp": {
       "type": "string",
@@ -21,9 +82,20 @@
     }
   },
   "required": [
+    "pid",
     "status",
     "process_name",
+    "executable_path",
+    "parent_pid",
+    "parent_process_name",
+    "started_at",
+    "command_line_indicators",
+    "file_sha256",
+    "file_hash_status",
+    "signature_status",
+    "signer",
     "threat_level",
+    "threat_reasons",
     "timestamp"
   ],
   "additionalProperties": false

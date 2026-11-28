@@ -1,6 +1,6 @@
 # Panther-Guard
 
-A desktop security helper for FIU students. Java scans running processes and logs security events; a Streamlit dashboard (with Roary the panther as your AI helper) shows what it found.
+A desktop security helper for FIU students. A Java scanner inventories process IDs, executable paths, parent processes, and selected PowerShell indicators. The Streamlit dashboard compares snapshots and assigns explainable Low, Medium, or High heuristic review priorities. These are triage signals, not confirmed detections.
 
 ## Project structure
 
@@ -10,11 +10,13 @@ Panther-Guard/
 ├── roary_helper.py     # Roary AI helper panel
 ├── run_app.bat         # One-click start (Windows)
 ├── run_app.sh          # One-click start (Mac/Linux)
-├── src/                # Java source (ProcessScanner, Logger)
+├── src/                # Process scanner, process history, heuristic rules, and file evidence
 ├── bin/                # Compiled Java classes (created by the run script)
 ├── data/               # ipc_spec.json, security_logs.json
 └── assets/             # Roary mascot images
 ```
+
+Process assessments are explainable heuristics based on the executable path, parent process, and selected PowerShell flags. A process already flagged by another heuristic also gets a local Authenticode check and SHA-256 hash; hashes are not sent to or checked against an external reputation service. Low means no configured indicators were found; it does not certify a process as safe.
 
 ## Prerequisites
 

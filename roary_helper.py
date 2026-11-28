@@ -8,7 +8,10 @@ Standalone preview:
     streamlit run roary_helper.py
 
 Expects the log format defined in data/ipc_spec.json:
-    status, process_name, threat_level, timestamp
+    pid, status, process_name, executable_path, parent_pid,
+    parent_process_name, started_at, command_line_indicators,
+    file_sha256, file_hash_status, signature_status, signer,
+    threat_level, threat_reasons, timestamp
 """
 
 import json

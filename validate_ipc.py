@@ -49,7 +49,16 @@ for index, process in enumerate(processes, start=1):
 
     if not errors:
         print(f"Process {index}: PASS")
+        print(f"  PID: {process['pid']}")
         print(f"  Name: {process['process_name']}")
+        print(f"  Status: {process['status']}")
+        print(f"  Signature: {process['signature_status']}")
+        if process["signer"]:
+            print(f"  Publisher: {process['signer']}")
+        if process["file_sha256"]:
+            print(f"  SHA-256: {process['file_sha256']}")
+        if "threat_reasons" in process:
+            print(f"  Threat reasons: {', '.join(process['threat_reasons'])}")
     else:
         failed = True
         print(f"Process {index}: FAIL")

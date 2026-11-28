@@ -1,26 +1,77 @@
-
 [
   {
-    "status": "running",
+    "pid": 10001,
+    "status": "New",
     "process_name": "suspicious.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "critical",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-02T13:00:00Z"
   },
   {
-    "status": "running",
+    "pid": 10002,
+    "status": "New",
     "process_name": "unknown.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "extreme",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "2026-11-02T13:05:00Z"
   },
   {
-    "status": "running",
+    "pid": 10003,
+    "status": "New",
     "process_name": "malware.exe",
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
     "threat_level": "high",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ],
     "timestamp": "invalid-date"
   },
   {
-    "status": "running",
+    "pid": 10004,
+    "status": "New",
     "process_name": "test.exe",
-    "threat_level": "medium"
+    "executable_path": null,
+    "parent_pid": null,
+    "parent_process_name": null,
+    "started_at": null,
+    "command_line_indicators": [],
+    "file_sha256": null,
+    "file_hash_status": "not_checked",
+    "signature_status": "not_checked",
+    "signer": null,
+    "threat_level": "medium",
+    "threat_reasons": [
+      "Legacy fixture: severity is illustrative and process metadata is unavailable."
+    ]
   }
 ]
